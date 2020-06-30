@@ -1,2 +1,2 @@
 # WindowsBatchScripts
-Useful compendium of script files
+Useful compendium of Windows Batch Scripts.
