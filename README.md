@@ -1,6 +1,6 @@
 ![CI](https://github.com/WhisperingChaos/WindowsBatchScripts/workflows/CI/badge.svg)
 
-# WindowsBatchScripts
+# Windows Batch Script Catalog
 Useful compendium of Windows Batch Scripts.
 
 ### File Commands
