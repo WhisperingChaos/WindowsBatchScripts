@@ -7,7 +7,7 @@ on:
 
 jobs:
   Test:
-    runs-on: windows-latest
+    runs-on: windows-1904
     defaults:
       run:
         shell: cmd
