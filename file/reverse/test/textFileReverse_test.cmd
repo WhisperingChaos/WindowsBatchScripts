@@ -30,7 +30,8 @@ setlocal
       ":test_compare asciiTbl"
     ) do (
     call %%~f || ( echo Test failed: '%%~f' >&2 & goto :error)
-  ) 
+    echo Test '%%~f' successfully completed.
+  )
 endlocal
 exit /b 0
 
