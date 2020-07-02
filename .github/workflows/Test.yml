@@ -1,10 +1,7 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 on:
   push:
     branches: [ master ]
-
 jobs:
   Test:
     runs-on: windows-2019
@@ -13,9 +10,6 @@ jobs:
         shell: cmd
     steps:
     - uses: actions/checkout@v2
-    - name: Enable developer mode for syslink support
-      run: reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
-    - name: Run all test scripts
+    - name: Run Tests
       working-directory: .\file\reverse\test
       run: textFileReverse_test.cmd
-
