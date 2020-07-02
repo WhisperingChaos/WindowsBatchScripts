@@ -17,5 +17,5 @@ jobs:
       working-directory: .\file\reverse\test
       run: |
         reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
-        textFileReverse_test.cmd
+        cmd /c textFileReverse_test.cmd
 
