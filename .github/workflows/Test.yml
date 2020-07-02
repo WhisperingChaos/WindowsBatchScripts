@@ -14,6 +14,9 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: windows-latest
+    defaults:
+      run:
+        shell: cmd.exe
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -22,6 +25,6 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run all test scripts
-      run: 
-        cd .\file\reverse\test
-        textFileReverse_test.cmd
+      working-directory: .\file\reverse\test
+      run: textFileReverse_test.cmd
+
