@@ -1,4 +1,13 @@
 @echo off
+goto :main
+::-----------------------------------------------------------------------------
+::
+::  Note:
+::    Requires Windows default code page: 850 to successfully process asciiTbl.
+::    Set code page to this default value using "chcp 850" command when running
+::    as github action or in local environment where the asciiTbl test fails.
+::
+::-----------------------------------------------------------------------------
 :main:
 setlocal
   
