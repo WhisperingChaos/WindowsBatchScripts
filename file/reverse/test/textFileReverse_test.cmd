@@ -2,7 +2,8 @@
 :main:
 setlocal
 
-call textFileReverse.cmd /v | findstr /r /c:"^version: 0\.5"
+echo current directory: %CD%
+..\component\textFileReverse.cmd /v | findstr /r /c:"^version: 0\.5"
 exit /b
 ::      ":test_help"
 :: ":test_version"
