@@ -1,7 +1,7 @@
 @echo off
 :main:
 setlocal
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
+call reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
 echo current directory: %CD%
 textFileReverse.cmd /v | findstr /r /c:"^version: 0\.5"
 exit /b
