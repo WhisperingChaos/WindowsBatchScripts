@@ -22,4 +22,6 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run all test scripts
-      run: cd .\file\reverse\test & .\file\reverse\test\textFileReverse_test.cmd
+      run: 
+        cd .\file\reverse\test
+        textFileReverse_test.cmd
