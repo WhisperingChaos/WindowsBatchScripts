@@ -3,9 +3,9 @@
 setlocal
 
 ::      ":test_help"
+:: ":test_version"
 
   for %%f in (
-      ":test_version"
       ":test_compare singleLine"
       ":test_compare doubleLine"
       ":test_compare tripleLine"
@@ -35,13 +35,8 @@ exit /b
 
 
 :test_version:
-setlocal
   textFileReverse.cmd /v | findstr /r /c:"^version: 0\.5">nul
-  if not %errorlevel% == 0 (
-    exit /b 1
-  )
-end local 
-exit /b 0
+exit /b
 
 
 :singleLine4059:
