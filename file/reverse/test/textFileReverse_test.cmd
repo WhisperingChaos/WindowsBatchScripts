@@ -1,9 +1,10 @@
 @echo off
 :main:
 setlocal
-  
+
+::      ":test_help"
+
   for %%f in (
-      ":test_help"
       ":test_version"
       ":test_compare singleLine"
       ":test_compare doubleLine"
