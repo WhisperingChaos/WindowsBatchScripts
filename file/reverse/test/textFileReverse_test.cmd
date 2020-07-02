@@ -2,6 +2,8 @@
 :main:
 setlocal
 
+call textFileReverse.cmd /v
+exit /b
 ::      ":test_help"
 :: ":test_version"
 
