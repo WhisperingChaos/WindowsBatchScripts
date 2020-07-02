@@ -1,3 +1,5 @@
+![CI](https://github.com/WhisperingChaos/WindowsBatchScripts/workflows/CI/badge.svg)
+
 # WindowsBatchScripts
 Useful compendium of Windows Batch Scripts.
 
