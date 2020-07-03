@@ -14,7 +14,7 @@ setlocal
   dir
   cd %~p0
   dir 
-  call textFileReverse.cmd /v
+  ::call textFileReverse.cmd /v
   call .\textFileReverse.cmd /v
   @echo off
   exit /b
