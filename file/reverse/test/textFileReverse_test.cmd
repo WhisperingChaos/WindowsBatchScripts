@@ -11,8 +11,10 @@ goto :main
 :main:
 setlocal
   @echo on
-  
-  call textFileReverse.cmd /?
+  dir
+  call textFileReverse.cmd /v
+  call .\textFileReverse.cmd /v
+
   echo errorlevel: %errorlevel%
   
   @echo off
