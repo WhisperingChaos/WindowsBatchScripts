@@ -10,14 +10,15 @@ goto :main
 ::-----------------------------------------------------------------------------
 :main:
 setlocal
-  @echo on
-  dir /Q
-  dir /AL
-  call textFileReverse.cmd /?
-  @echo off
-  exit /b
+::  @echo on
+:: dir /Q
+::  dir /AL
+::  call textFileReverse.cmd /?
+::  @echo off
+::  exit /b
   
-  call :githubActionPatch
+:: call :githubActionPatch
+set TEXT_FILE_REVERSE_CMD=textFileReverse.cmd
 
   for %%f in (
       ":test_help"
