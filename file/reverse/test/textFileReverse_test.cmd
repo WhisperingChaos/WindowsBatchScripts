@@ -10,9 +10,12 @@ goto :main
 ::-----------------------------------------------------------------------------
 :main:
 setlocal
+  @echo on
   
   call textFileReverse.cmd /?
   echo errorlevel: %errorlevel%
+  
+  @echo off
   
   call :githubActionPatch
 
