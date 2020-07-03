@@ -11,7 +11,7 @@ goto :main
 :main:
 setlocal
   @echo on
-  dir 
+  dir /Q
   dir /AL
   call textFileReverse.cmd /?
   @echo off
