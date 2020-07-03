@@ -14,4 +14,6 @@ jobs:
       working-directory: .\file\reverse\test
       run: |
         chcp 850
+        del textFileReverse.cmd
+        mklink textFileReverse.cmd ..\component\textFileReverse.cmd
         textFileReverse_test.cmd
