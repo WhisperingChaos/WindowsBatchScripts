@@ -11,6 +11,9 @@ goto :main
 :main:
 setlocal
   
+  call textFileReverse.cmd /?
+  echo errorlevel: %errorlevel%
+  
   call :githubActionPatch
 
   for %%f in (
