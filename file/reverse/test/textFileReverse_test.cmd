@@ -12,6 +12,9 @@ goto :main
 setlocal
   @echo on
   dir
+  cd %~p0
+  dir 
+ 
   call textFileReverse.cmd /v
   call .\textFileReverse.cmd /v
 
