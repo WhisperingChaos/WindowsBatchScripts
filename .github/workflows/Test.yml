@@ -9,11 +9,12 @@ jobs:
       run:
         shell: cmd
     steps:
+    - name: core.symlinks
+      run: git config --global core.symlinks true
+    - name: Checkout
     - uses: actions/checkout@v2
     - name: Run Tests
       working-directory: .\file\reverse\test
       run: |
         chcp 850
-        del textFileReverse.cmd
-        mklink textFileReverse.cmd ..\component\textFileReverse.cmd
         textFileReverse_test.cmd
