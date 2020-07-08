@@ -95,9 +95,9 @@ exit /b 1
 setlocal
     set MYSELF=%~1
 
-    call "%MYSELF%" /p :padAdd^
+      "%MYSELF%" /p :padAdd^
     | sort /r^
-    | call "%MYSELF%" /p :padRemove
+    | "%MYSELF%" /p :padRemove
 
     if not %errorlevel% == 0 (
         endlocal
