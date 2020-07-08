@@ -49,7 +49,7 @@ exit /b
 
 
 :test_version:
-  textFileReverse.cmd /v | findstr /r /c:"^version: 0\.5">nul
+  textFileReverse.cmd /v | findstr /r /c:"^version: 0\.6">nul
 exit /b
 
 

@@ -51,7 +51,7 @@ exit /b
 
 
 :versionEcho:
-    echo version: 0.5
+    echo version: 0.6
 exit /b
 
 
