@@ -5,3 +5,5 @@ Useful compendium of Windows Batch Scripts.
 
 ### File Commands
  - [textFileReverse.cmd](./file/reverse/component): Reverse the order of a text file's newline terminated lines.
+
+ - [dateMath.cmd](.date/math/component): Compute difference between dates or calculate future/past date.  Copied verbatim from [ss64.com datemath](https://ss64.com/nt/datemath.txt).

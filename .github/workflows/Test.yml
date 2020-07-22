@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  Test:
+  TestFileReverse:
     runs-on: windows-2019
     defaults:
       run:
@@ -17,3 +17,16 @@ jobs:
         del textFileReverse.cmd
         mklink textFileReverse.cmd ..\component\textFileReverse.cmd
         textFileReverse_test.cmd
+  TestDateMath:
+    runs-on: windows-2019
+    defaults:
+      run:
+        shell: cmd
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Tests
+      working-directory: .\date\math\test
+      run: |
+        del dateMath.cmd
+        mklink dateMath.cmd ..\component\dateMath.cmd
+        dateMath_test.cmd
